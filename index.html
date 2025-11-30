@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saif Ahmed Shuvo - Portfolio</title>
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; background: #f5f5f5; color: #222; }
+        header { background: #0d1b2a; color: #fff; padding: 40px 20px; text-align: center; }
+        nav { background: #1b263b; padding: 10px; text-align: center; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .container { width: 90%; max-width: 1100px; margin: auto; padding: 20px; }
+        .section-title { font-size: 28px; margin-bottom: 10px; border-left: 5px solid #1b263b; padding-left: 10px; }
+        /* Profile */
+        .profile-box { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        /* Skills */
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .skill-card { background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        /* Experience & Projects */
+        .card { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        /* Image Section */
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .gallery img { width: 100%; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        footer { text-align: center; background: #0d1b2a; color: #fff; padding: 20px; margin-top: 30px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="display:flex; flex-direction:column; align-items:center;">
+        <img src="./shuvo.jpg" alt="Profile Photo" style="width:140px; height:140px; border-radius:50%; object-fit:cover; border:3px solid #fff; margin-bottom:15px;" />
+        <h1>Saif Ahmed Shuvo</h1>
+        <p>Network & Cyber Security Analyst</p>
+    </div>
+</header>
+
+<nav>
+    <a href="#profile">Profile</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#images">Images</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <!-- Profile Section -->
+    <section id="profile">
+        <h2 class="section-title">Profile</h2>
+        <div class="profile-box">
+            <p>I am a 7th-semester Computer Science student with solid knowledge in networking and cybersecurity. Skilled in monitoring, SIEM operations, communication, and incident handling with hands-on SOC and VAPT experience. Motivated to start a career in Network Operations with strong communication and troubleshooting skills.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card"><h3>Networking</h3><p>Routing & Switching, TCP/IP, Network Troubleshooting</p></div>
+            <div class="skill-card"><h3>Security</h3><p>SIEM, Firewall, VAPT, Incident Response, Malware Analysis</p></div>
+            <div class="skill-card"><h3>Tools</h3><p>Wireshark, Zeek, Wazuh, Kali Linux</p></div>
+            <div class="skill-card"><h3>Professional</h3><p>Problem-solving, Adaptability, Communication</p></div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="card">
+            <h3>Junior Pentester (Remote)</h3>
+            <p><strong>Byte Capsule LTD</strong> | Feb 2024 – Apr 2024</p>
+            <ul>
+                <li>Conducted web application vulnerability assessments.</li>
+                <li>Simulated SOC operations with alert triaging and response.</li>
+                <li>Integrated VAPT & incident response reports using MITRE ATT&CK.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="card">
+            <h3>Security Operations Center (SOC) Implementation</h3>
+            <p>Set up Wazuh, Zeek & Fleet for endpoint monitoring, rule creation, and incident analysis in a simulated SOC environment.</p>
+        </div>
+        <div class="card">
+            <h3>Live SOC Monitoring (Simulated)</h3>
+            <p>Performed triage, alerts investigation, and malware analysis inside a SOC environment.</p>
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Contact</h2>
+        <div class="card">
+            <p>Email: shaifshuvo46@gmail.com</p>
+            <p>Phone: +8801581440900</p>
+            <p>LinkedIn: linkedin.com/in/saif-ahmed-shuvo</p>
+
+            <h3 style="margin-top:20px;">Send Me a Message</h3>
+            <form action="mailto:shaifshuvo46@gmail.com" method="POST" enctype="text/plain" style="display:flex; flex-direction:column; gap:10px; margin-top:10px;">
+                <input type="text" name="name" placeholder="Your Name" required style="padding:10px; border-radius:5px; border:1px solid #ccc;">
+                <input type="email" name="email" placeholder="Your Email" required style="padding:10px; border-radius:5px; border:1px solid #ccc;">
+                <textarea name="message" rows="5" placeholder="Your Message" required style="padding:10px; border-radius:5px; border:1px solid #ccc;"></textarea>
+                <button type="submit" style="padding:12px; background:#1b263b; color:#fff; border:none; border-radius:5px; cursor:pointer; font-weight:bold;">Send Message</button>
+            </form>
+        </div>
+    </section>
+</div>
+
+<footer>
+    <p>© 2025 Saif Ahmed Shuvo | Portfolio Website</p>
+</footer>
+
+<script>
+    // JS gallery loader placeholder
+    console.log("Portfolio Loaded Successfully");
+</script>
+
+</body>
+</html>
